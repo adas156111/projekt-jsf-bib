@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<body bgcolor="black">
+	<f:view>
+		<center>
+			<h:outputLabel value="Strona logowania" style="color:white"></h:outputLabel>
+		</center>
+	</f:view>
+	<f:view>
+		<center>
+			<table border="5">
+				<tr>
+					<td style="color: white;"><h:outputLabel value="Login"></h:outputLabel></td>
+					<td style="color: white;"><h:inputText value="#{userLoginBean.login}"></h:inputText></td>
+				</tr>
+				<tr>
+					<td style="color: white;"><h:outputLabel value="Pssword"></h:outputLabel></td>
+					<td style="color: white;"><h:inputSecret value="#{userLoginBean.password}"/></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><h:commandButton action="#{userLoginBean.logowanie}" value="Zaloguj"></h:commandButton></td>
+				</tr>	
+				<tr>
+					<td colspan="2" align="center"><h:outputText value="#{userLoginBean.login}"></h:outputText></td>
+				</tr>								
+			</table>
+		</center>
+	</f:view>
+</body>
+</html>
