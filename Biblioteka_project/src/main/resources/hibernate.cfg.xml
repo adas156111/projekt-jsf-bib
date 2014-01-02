@@ -4,11 +4,11 @@
         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 <hibernate-configuration>
 
-    <session-factory>
-		<!-- Database connection>-->
+	<session-factory>
+		<!-- Database connection> -->
 		<property name="connection.driver_class">
 			org.postgresql.Driver
-		</property>		
+		</property>
 		<property name="connection.url">
 			jdbc:postgresql://localhost:5432/Biblioteka
 		</property>
@@ -30,11 +30,11 @@
 		<property name="hbm2ddl.auto">
 			update
 		</property>
-		
+
 		<!-- Mapping class -->
-        <mapping class="model.User"/>
-        <mapping class="model.UserDetails"/>
-		
-    </session-factory>
+		<mapping class="model.User" />
+		<mapping class="model.UserDetails" />
+
+	</session-factory>
 
 </hibernate-configuration>
